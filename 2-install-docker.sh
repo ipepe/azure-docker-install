@@ -18,7 +18,7 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-
 sudo chmod +x /usr/local/bin/docker-compose
 
 echo "Changing storage driver to devicemapper"
-systemctl stop docker
+sudo systemctl stop docker
 sudo rm -rf /var/lib/docker
 sudo sed -i -e '/^ExecStart=/ s/$/ --storage-driver=overlay2/' /lib/systemd/system/docker.service
 
