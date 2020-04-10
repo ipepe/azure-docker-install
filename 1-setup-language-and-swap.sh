@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 #language
 sudo locale-gen "en_US.UTF-8"
 sudo sh -c "echo >> /etc/environment"
