@@ -5,6 +5,7 @@ set -e
 echo Installing docker...
 sudo apt-get update
 sudo apt install docker.io
+sudo systemctl enable docker
 sudo systemctl start docker
 
 #status of docker
