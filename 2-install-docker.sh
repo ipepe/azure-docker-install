@@ -5,6 +5,7 @@ set -e
 echo Installing docker...
 sudo apt-get update
 sudo apt install docker.io
+sudo systemctl start docker
 
 #status of docker
 echo You can check status of docker service with:
